@@ -56,12 +56,3 @@ This repository holds the frontend code for an Instagram clone, developed using 
     npm start
     ```
 
----
-
-To add screenshots to the README, you'll need to:
-
-1. Take screenshots of your app.
-2. Add the screenshot images to your GitHub repository, possibly in a folder named `screenshots` for organization.
-3. Reference these images in your README.md file with appropriate alt text and file paths.
-
-This way, anyone visiting your repository can get a quick visual overview of what your project looks like, along with how to install and use it.
