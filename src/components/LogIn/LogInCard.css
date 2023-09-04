@@ -1,0 +1,105 @@
+/* 
+  The container holding both login and signup cards.
+  Flexbox is used here to align children vertically
+*/
+.loginCard__container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 330px; /* Fixed width */
+    margin-top: 20px; /* Add some space at the top */
+  }
+  
+  /* 
+    Individual cards for login and signup.
+    Sets a common appearance across both cards
+  */
+  .loginCard__card,
+  .loginCard__signupCard {
+    background-color: #fff; /* White background */
+    border: 1px solid #e2e2e2; /* Grey border */
+    width: 330px; /* Fixed width */
+  }
+  
+  /* 
+    Style specifically for login card.
+    Flexbox is used here to align children vertically
+  */
+  .loginCard__card {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    height: 300px; /* Fixed height */
+    padding: 15px; /* Add some internal space */
+  }
+  
+  /* 
+    Style specifically for signup card.
+  */
+  .loginCard__signupCard {
+    margin-top: 10px; /* Add some space at the top */
+    height: 62px; /* Fixed height */
+  }
+  
+  /* 
+    Style for signup text and link.
+    Text is center-aligned and has specific margin
+  */
+  .loginCard__signupCard p {
+    font-size: 12px; /* Font size */
+    text-align: center; /* Center align text */
+    margin: 20px auto; /* Center align block and add vertical margin */
+  }
+  .loginCard__signupCard p span {
+    color: rgb(31, 151, 247); /* Specific color for sign-up link */
+  }
+  
+  /* 
+    Instagram logo styling.
+    The logo is centered using auto margins
+  */
+  .loginCard__logo {
+    width: 174px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    margin: 36px auto; /* Center align and add vertical space */
+  }
+  
+  /* 
+    Styling the input fields' container.
+    Flexbox is used here to align children vertically
+  */
+  .loginCard__inputFields {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children */
+  }
+  
+  /* 
+    Styles for individual input fields.
+    Dimensions, padding, and other visual styles are set
+  */
+  .loginCard__inputField {
+    width: 268px; /* Fixed width */
+    margin-bottom: 8px; /* Add some space at the bottom */
+    padding: 9px 8px; /* Internal padding */
+    border: 1px solid #e6e4e4; /* Border color */
+    font-size: 11px; /* Font size */
+    color: #a7a6a4; /* Font color */
+    background-color: #fafafa; /* Background color */
+    border-radius: 3px; /* Rounded corners */
+  }
+  
+  /* 
+    Styles for the login button.
+    Background color, font, and other visual styles are set
+  */
+  .loginCard__loginButton {
+    width: 268px; /* Fixed width */
+    background-color: #4cb5f9; /* Background color */
+    color: white; /* Font color */
+    border: none; /* No border */
+    padding: 8px; /* Internal padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 12px; /* Font size */
+    font-weight: 550; /* Font weight */
+    cursor: pointer; /* Cursor style */
+  }
+  
