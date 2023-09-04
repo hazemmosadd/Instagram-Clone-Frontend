@@ -7,7 +7,7 @@ This repository holds the frontend code for an Instagram clone, developed using 
 ## 📷 Screenshots
 
 ### User Sign In Page
-![User Sign In Page](./screenshots/signin.png)
+![User Sign In Page](./screenshots/login.png)
 
 
 
