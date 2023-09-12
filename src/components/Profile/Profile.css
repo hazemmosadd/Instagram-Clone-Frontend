@@ -1,0 +1,215 @@
+/* Base styles */
+.profile-container {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 30px 20px;
+
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+/* Avatar styles */
+.avatar {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-wrapper {
+    height: 150px;
+    width: 277.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 37px;
+}
+
+/* User info styles */
+.profile-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-row {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.profile-username {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.profile-actions {
+    display: flex;
+    margin-left: 20px;
+}
+
+.btn-edit,
+.btn-view-archive {
+    background-color: rgb(54, 54, 54);
+    height: 32px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-view-archive {
+    margin-left: 8px;
+}
+
+.icon-settings {
+    margin-left: 45px;
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+}
+
+/* Profile stats */
+.user-stats {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.stat-item {
+    margin: 0;
+    margin-right: 42px;
+}
+
+.stat-value {
+    font-weight: 500;
+    font-size: 15.5px;
+}
+
+/* Additional styles */
+.profile-fullname,
+.profile-bio {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.profile-bio {
+    font-weight: 400;
+    line-height: 14px;
+}
+
+/* Highlights */
+.highlights-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    margin-bottom: 88px;
+}
+
+.highlights-title {
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgb(30, 30, 30);
+}
+
+/* Navigation bar */
+.navbar {
+    height: 52px;
+    border-top: 0.8px solid rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.nav-item--first {
+    margin-right: 60px;
+}
+
+.nav-item--last {
+    margin: 0;
+}
+
+.nav-icon {
+    width: 12px;
+    height: 12px;
+    filter: invert(1);
+}
+
+.nav-icon--tagged {
+    width: 14px;
+    height: 14px;
+}
+
+.nav-label {
+    margin: 0;
+    font-size: 13.1px;
+    font-weight: 500;
+    color: #A8A8A8;
+    margin-left: 6px;
+}
+
+.active {
+    border-top: 0.8px solid rgb(255, 255, 255);
+
+}
+
+/* Utility */
+.spacer {
+    height: 15px;
+    width: 100%;
+}
+
+/* Posts Section */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.post-item {
+    width: 309px;
+    height: 309px;
+    overflow: hidden; /* Hide the portions of the image that exceed the boundaries */
+    position: relative; /* Position relative to allow absolute positioning of its children */
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+
+
+.post-image {
+    width: 309px;  /* Set the width */
+    height: auto;  /* Auto height to maintain aspect ratio */
+    position: absolute;  /* Absolute positioning */
+    top: 50%;  /* Center the image vertically */
+    left: 50%;  /* Center the image horizontally */
+    transform: translate(-50%, -50%);  /* Adjust for true centering */
+  }

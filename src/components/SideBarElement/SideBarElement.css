@@ -1,0 +1,39 @@
+.sidebar__element{
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+    margin: 4px 0px;
+    height: 52px;
+
+
+}
+.sidebar__element:hover {
+    background-color: rgb(26,26,26); /* New background color on hover */
+}
+
+.sidebar__icon{
+    width: 22px;
+    height: 22px;
+    filter: invert(1);
+    align-self: center;
+    font-weight: 400;
+}
+
+.element__name {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 15px;
+    font-weight: 450;
+    letter-spacing: 0.4px;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 27px;
+    width: 27px;
+    filter: invert(0);
+}

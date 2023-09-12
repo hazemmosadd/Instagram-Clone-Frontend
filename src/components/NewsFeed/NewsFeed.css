@@ -1,0 +1,17 @@
+.newsfeed-container {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+
+}
+.header {
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgb(72, 72, 72);
+    margin-top: 200px;
+
+}

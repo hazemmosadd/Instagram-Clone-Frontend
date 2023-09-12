@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +10,7 @@ html {
 
 
 body {
-  font-family: Arial, sans-serif; /* Sets the default font for the page */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6; /* Sets the default line height */
   color: #333; /* Sets the default text color */
   margin: 0;  /* Removes default margins */

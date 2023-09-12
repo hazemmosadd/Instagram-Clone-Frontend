@@ -1,0 +1,22 @@
+.app__main{
+    min-height: 100vh; /* Take at least full viewport height */
+    width: 100%;
+    display: flex;
+}
+.app__main::before {
+  content: "";
+  width: 243px; /* Same width as the sidebar */
+  height: 100%;
+  flex-shrink: 0;
+}
+.black-bg {
+    background-color: black;
+    color: white;
+}
+.right-side{
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0);
+  flex-grow: 1;
+  overflow-y:auto
+
+}
