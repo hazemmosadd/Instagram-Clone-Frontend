@@ -11,6 +11,8 @@
 ## 🌐 Table of Contents
 - [Overview](#-overview)
 - [Features](#-features)
+- [Screenshots](#-Screenshots)
+
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Installation & Setup](#-installation--setup)
@@ -28,6 +30,12 @@ This project is designed to emulate the key features of Instagram's frontend. It
 - [ ] 💬 Comments and 👍 Likes 
 - [ ] 🤝 User Follow/Unfollow Mechanism 
 - [ ] 🛎️ Real-time Notifications 
+
+## 📷 Screenshots
+
+### User Sign In Page
+![User Sign In Page](./screenshots/login.png)
+![User Profie Page](./screenshots/profile.png)
 
 ## 🚀 Tech Stack
 - **React.js**: Frontend Library
