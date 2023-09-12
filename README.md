@@ -12,7 +12,6 @@
 - [Overview](#-overview)
 - [Features](#-features)
 - [Screenshots](#-Screenshots)
-
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Installation & Setup](#-installation--setup)
@@ -35,6 +34,7 @@ This project is designed to emulate the key features of Instagram's frontend. It
 
 ### User Sign In Page
 ![User Sign In Page](./screenshots/login.png)
+### User Profile Page
 ![User Profie Page](./screenshots/profile.png)
 
 ## 🚀 Tech Stack
