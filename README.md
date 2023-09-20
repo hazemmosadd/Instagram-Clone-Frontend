@@ -4,6 +4,7 @@
 
 ![Status](https://img.shields.io/badge/status-in--progress-yellow)
 ![Language](https://img.shields.io/badge/language-React.js-brightgreen)
+![State Management](https://img.shields.io/badge/state%20management-Redux-purple)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 > 🌟 **Note**: This repository contains the frontend code. For the backend Node.js application, please visit [Instagram-Clone-Backend](https://github.com/hazemmosadd/Instagram-Clone-Backend).
@@ -39,6 +40,7 @@ This project is designed to emulate the key features of Instagram's frontend. It
 
 ## 🚀 Tech Stack
 - **React.js**: Frontend Library
+- **Redux**: Used for centralized state management to facilitate seamless user experience across the application.
 - **Node.js**: Backend Logic (See [Backend Repo](https://github.com/hazemmosadd/Instagram-Clone-Backend))
 
 

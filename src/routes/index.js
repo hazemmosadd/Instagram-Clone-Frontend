@@ -3,17 +3,22 @@ import LoginScreen from "../pages/LoginScreen/LoginScreen";
 import React, { useEffect, useState } from "react";
 import { checkLoginStatus } from "../utils/api";
 import MainScreen from "../pages/MainScreen/MainScreen";
-import Profile from "../components/Profile/Profile";
 import NewsFeed from "../components/NewsFeed/NewsFeed";
 import ProfileContainer from "../containers/ProfileContainer/ProfileContainer";
+import { useDispatch } from 'react-redux';
+import { loginUser } from '../redux/userSlice'; // Import the login action creator
+
 const AppRoutes = () => {
   const [isLoading, setLoading] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const dispatch = useDispatch()
 
   useEffect(() => {
     const fetchLoginStatus = async () => {
       const response = await checkLoginStatus();
       if (response && response.isLoggedIn) {
+        
+        dispatch(loginUser({username : response.username}))
         setIsLoggedIn(true);
       }
       setLoading(false);
@@ -25,9 +30,9 @@ const AppRoutes = () => {
 
   return (
     <Routes>
-      <Route path="/" element={ isLoggedIn ? ( <MainScreen></MainScreen>  ) : ( <LoginScreen updateLoginStatus={setIsLoggedIn} />  )  } >
-        <Route index element={<NewsFeed></NewsFeed>} />
-        <Route path="/profile"   element={<ProfileContainer></ProfileContainer>}/>
+      <Route  path="/"   element={isLoggedIn ? (  <MainScreen></MainScreen>) : (  <LoginScreen updateLoginStatus={setIsLoggedIn} />)}>
+          <Route index element={<NewsFeed></NewsFeed>} />
+          <Route  path="/:username"  element={<ProfileContainer></ProfileContainer>} />
       </Route>
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>

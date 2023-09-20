@@ -36,9 +36,9 @@ const Profile = ({ profilePosts, profileData , avatar }) => {
         </div>
       </div>
       <div className="posts">
-        {profilePosts.map((url, index) => (
+        {profilePosts.map((post, index) => (
           <div className="post-item" key={index}>
-            <img className="post-image" src={url} alt={`Post ${index + 1}`} />
+            <img className="post-image" src={`${process.env.REACT_APP_API_BASE_URL + post.url }`} alt={`Post ${index + 1}`} />
           </div>
         ))}
       </div>
